@@ -126,7 +126,6 @@ public:
 
         cout << GREEN << "\n " << winnerName << " WINS the game! \n" << RESET;
 
-        // Show leaderboard
         sort(players.begin(), players.end(), [](Player &a, Player &b) {
             return a.score > b.score;
         });
@@ -172,7 +171,7 @@ int main() {
         switch (choice) {
             case 1: game.start(); break;
             case 2: game.showHistory(); break;
-            case 3: cout << GREEN << "Exiting game. Goodbye!\n" << RESET; break;
+            case 3: cout << GREEN << "Exiting game. See You Again..\n" << RESET; break;
             default: cout << RED << "Invalid choice.\n" << RESET; break;
         }
     } while (choice != 3);
